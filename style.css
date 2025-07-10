@@ -1,0 +1,179 @@
+/* 폼 전체 너비와 가운데 정렬 */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+/* 제목 영역: 이미지와 텍스트 수평 정렬 */
+.header-title {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* 이미지와 텍스트 사이 간격 */
+}
+
+/* 학교 로고 이미지 크기 지정 */
+.school-logo {
+    width: 100px;
+    height: auto;
+}
+
+/* 각 입력 항목 그룹: 수평 정렬 + 간격 설정 */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px; /* 항목 간 세로 간격 */
+    gap: 10px; /* 라벨과 입력창 사이 좌우 간격 */
+}
+
+/* '내용' 입력창만 세로로 정렬되도록 설정 */
+.form-group.full-width {
+    flex-direction: 20px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* 라벨 스타일: 고정 너비, 굵은 글씨 */
+label {
+    width: 200px;
+    font-weight: bold;
+}
+
+/* 모든 입력창, 셀렉트박스, 텍스트에어리어 공통 스타일 */
+input,
+select,
+textarea {
+    padding: 8px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    width: 450%;
+    max-width: 500px;  /* ❗텍스트박스가 너무 좁게 제한될 수 있어요. 필요하면 조정 */
+    box-sizing: border-box;
+}
+
+/* 제목 아래 서브 문구 스타일 */
+.subtitle {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+.button {
+ display: flex;
+    align-items: center;
+
+} 
+body {
+font-family: 'Noto Sans KR', sans-serif;
+ margin: 0;
+ padding: 0;
+ background-color: #fff;
+ }
+
+header {
+padding: 20px;
+text-align: center;
+}
+
+.header-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .school-logo {
+            width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        main {
+            padding: 15px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            font-size: 1rem;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            padding-bottom: 40px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* 피드백 버튼 */
+        #feedbackBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9rem;
+            z-index: 1001;
+        }
+
+        /* 피드백 모달창 */
+        #feedbackModal {
+            display: none;
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            width: 300px;
+            background: white;
+            border: 1px solid #ccc;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            z-index: 1000;
+        }
+    
