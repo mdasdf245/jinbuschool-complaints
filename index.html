@@ -122,6 +122,12 @@
         }
     });
 
+        // X 버튼 클릭 시 모달창 닫기
+    document.getElementById("closeModalBtn").addEventListener("click", function () {
+        document.getElementById("feedbackModal").style.display = "none";
+    })
+
+                    
     // 피드백 폼 제출 후 모달창 닫기
     document.getElementById("feedbackForm").addEventListener("submit", function() {
         alert("피드백이 제출되었습니다. 감사합니다!");
